@@ -18,7 +18,7 @@ $Repeticiones = 30;
 
 foreach $size (@Size_Matriz){
 	foreach $hilo (@Num_Hilos) {
-		$file = "$Path/$Nombre_Ejecutable-".$size."-Hilos-".$hilo.".dat";
+		$file = "$Path/$Nombre_Ejecutable-".$size."-ARCH-Hilos-".$hilo.".dat";
 		for ($i=0; $i<$Repeticiones; $i++) {
 system("$Path/$Nombre_Ejecutable $size $hilo  >> $file");
 			printf("$Path/$Nombre_Ejecutable $size $hilo \n");
